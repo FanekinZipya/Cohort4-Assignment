@@ -3,6 +3,8 @@ package com.account;
 public class Account {
 
 	private int accountBalance;
+
+	//@todo Deborah, i dont think you implemented the pin in this code.... Where do you allow the user to create pins in this code base?
 	private int pin;
 	private int minimumBalance ;
 	
@@ -15,6 +17,9 @@ public class Account {
 	public int getAccountBalance() {
 		return accountBalance;
 	}
+
+
+	//@todo Deborah, please remove integrate the withdraw with pin to this method.
 
 	public void withdrawCash(int amountWithdrawn) {
 		if(amountWithdrawn < accountBalance) {
